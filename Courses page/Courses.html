@@ -1,0 +1,221 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            body ,p{
+             text-size-adjust: 20px;
+                text-align: center; 
+                font-size: 20px; 
+                background-color: #000717;
+                margin: 0;
+                font-family: "Montserrat";
+                color: #efefef;
+            }
+            *{
+                box-sizing: border-box;
+            }
+            .glass{
+                width: 40%;
+                float: left;
+                margin-left: 100px;
+                margin-right: 30px;
+                padding: 80px;
+            }
+ 
+.image{
+    width: 18%
+}
+
+.lists{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.lists a{
+    position: relative;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+.lists a::after{
+    height: 4px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top:120%;
+    background: #000717;
+    width: 80%;
+    right: 0;
+    border-radius: 5px;
+    margin: 2% auto 1% auto;
+    transform: scaleX(0) ;
+    transition: transform 500ms ease;
+}
+.header .image:hover{ 
+    transform: scale(1.2) skew(5deg, 5deg);
+}
+
+.lists a:hover{
+    text-decoration: none;
+    color: #efefef;
+}
+.lists .selected:hover{
+    background-color: transparent;
+    color: #efefef;
+}
+.lists a:hover:after{
+    transform: scaleX(1);
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 3%;
+    background-color: #da2c38;
+    border-radius: 0 0 10px 10px;
+}
+
+.selected{
+    background-color: #000717;
+    border-radius: 5px;
+    padding: 2% 4% 2% 4%;
+    color: #FB8B24;
+}
+
+.footer{
+    background: hsla(29, 96%, 56%, 1);
+background: linear-gradient(180deg, hsla(29, 96%, 56%, 1) 0%, hsla(44, 96%, 56%, 1) 100%);
+background: -moz-linear-gradient(180deg, hsla(29, 96%, 56%, 1) 0%, hsla(44, 96%, 56%, 1) 100%);
+background: -webkit-linear-gradient(180deg, hsla(29, 96%, 56%, 1) 0%, hsla(44, 96%, 56%, 1) 100%);
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FB8B24", endColorstr="#FBC224", GradientType=1 );
+}
+
+.foot-list{
+    margin: auto;
+    padding: 10% 7% 3% 7%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    justify-content: space-around;
+    font-weight: 300;
+}
+
+.foot-list a:hover{
+    color: #efefef;
+    font-weight: 600;
+    transform: translateY(-20%);
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+hr{
+    width: 60%;
+    background-color: #000717;
+    border-radius: 5px;
+    height: 5px;
+    border: none;
+}
+
+.foot{
+    display: flex;
+    padding: 5% 5% 3% 5%;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foot-left{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.foot-right{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+        </style>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+            <div class="header">
+                <div class="image">
+                    <img src="../small-logo.png" width= 100%>
+                </div>
+            <div class="lists">
+                <a href="../home page/home.html">Home</a>
+                <a href="../Category page/category.html">Categories</a>
+                <a href="../Instructor page/instructor.html">Instructor</a>
+                <a class="selected" href="../Courses page/Courses.html">Courses</a>
+                <a href="../About us/aboutus.html">About Us</a>
+            </div>   
+        </div>
+
+       <div class="div-title"> 
+            <p class="page-title">Courses</p>
+        </div>
+
+         <div class="jawad">
+            <div class="glass">
+                <img src="gfx mentor.jpg" alt="" width="100%" >
+            </div>
+            <div class="glass">
+                <div class="div-img">
+                    <img src="gfx mentor.jpg" alt="" width="100%" >
+                </div>           
+         </div>
+         </div>
+
+         <div class="jawad">
+            <div class="glass">
+                <img src="gfx mentor.jpg" alt="" width="100%" >
+            </div>
+            <div class="glass">
+                <div class="div-img">
+                    <img src="gfx mentor.jpg" alt="" width="100%" >
+                </div>           
+         </div>
+         </div>
+
+         <div class="jawad">
+            <div class="glass">
+                <img src="gfx mentor.jpg" alt="" width="100%" >
+            </div>
+            <div class="glass">
+                <div class="div-img">
+                    <img src="gfx mentor.jpg" alt="" width="100%" >
+                </div>           
+         </div>
+         </div>
+
+         <div class="jawad">
+            <div class="glass">
+                <img src="gfx mentor.jpg" alt="" width="100%" >
+            </div>
+            <div class="glass">
+                <div class="div-img">
+                    <img src="gfx mentor.jpg" alt="" width="100%" >
+                </div>           
+         </div> 
+         </div>
+        
+    </body>
+</html>

@@ -1,0 +1,214 @@
+@media (max-width: 1200px) {
+    .para{
+    top: 70%;
+    }
+    .paraf{
+        font-size: 0.8rem;
+    }
+    .paras{
+        font-size: 2rem;
+    }
+    .parat{
+        font-size: 1.1rem;
+    }
+
+    h1{
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #efefef;
+        padding-left: 2%;
+        margin-top: 5%;
+        letter-spacing: 0.5rem;
+    }
+    .card-cont .image {
+        width: 250px;
+    }
+}
+    
+
+@media (max-width: 900px) {
+    .paraf{
+        font-size: 0.7rem;
+    }
+    .paras{
+        font-size: 1.5rem;
+    }
+    .parat{
+        font-size: 0.7rem;
+    }
+    .btn-text{
+        font-size: 0.7rem;
+    }
+    .btn2{
+        font-size: 0.7rem;
+        padding: 4.5% 5% 4.5% 5%;
+    }
+    h1{
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #efefef;
+        padding-left: 2%;
+        margin-top: 5%;
+        letter-spacing: 0.4rem;
+        }
+        .foot-list{
+            font-size: 0.7rem;
+        }
+        .desc{
+            font-size: 0.9rem;
+        }
+        h2{
+            font-size: 1.2rem;
+        }
+        .btn-about{
+            font-size: 0.8rem;
+        }
+        .item .desc{
+            font-size: 0.9rem;
+        }
+        .item .desc .head{
+            font-size: 2.5rem;
+        }
+        .item .channel{
+            font-size: 0.8rem;
+        }
+        .card-cont .desc{
+            font-size: 0.8rem;
+        }
+        .card-cont .channelname{
+            font-size: 0.7rem;
+        }
+
+        .foot-left p{
+            font-size: 0.6rem;
+        }
+        .foot-right img{
+            width: 7%;
+        }
+        .card-cont .image {
+            width: 200px;
+        }
+        hr:not([size]){
+            height: 3.5px;
+        }
+}
+
+@media (max-width: 600px) {
+    
+    hr:not([size]){
+        height: 2.5px;
+    }
+    .paraf{
+        font-size: 0.5rem;
+    }
+    .paras{
+        font-size: 1rem;
+    }
+    .parat{
+        font-size: 0.6rem;
+        width: 70%;
+    }
+    .btn-cover{
+        width: 60%;
+    }
+    .btn1{
+        border-radius: 4px;
+    padding: 2% 5% 2% 5%;
+    }
+    .btn1::before{
+        border-radius: 3px;
+    }
+    .btn2{
+        border-radius: 4px;
+        font-size: 0.6rem;
+    }
+    .btn-text{
+        font-size: 0.6rem;
+
+    }
+    .foot-list{
+        font-size: 0.6rem;
+    }
+    .desc{
+        font-size: 0.7rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    .btn-about{
+        font-size: 0.6rem;
+    }
+    .item .desc{
+        font-size: 0.7rem;
+    }
+    .item .desc .head{
+        font-size: 2rem;
+    }
+    .item .channel{
+        font-size: 0.7rem;
+    }
+    .card-cont .desc{
+        font-size: 0.7rem;
+    }
+    .card-cont .channelname{
+        font-size: 0.6rem;
+    }
+
+    h1{
+        font-size: 0.7rem;
+        letter-spacing: 0.4rem;
+        }
+        .foot-left p{
+            font-size: 0.5rem;
+        }
+        .foot-right img{
+            width: 12%;
+        }
+        .card-cont .image {
+            width: 150px;
+        }
+        .card-cont{
+            margin: 1%;
+        }
+}
+
+@media (max-width: 400px) {
+    .paraf{
+        font-size: 0.3rem;
+    }
+    .paras{
+        font-size: 0.8rem;
+    }
+    .parat{
+        font-size: 0.4rem;
+        width: 70%;
+    }
+    .btn-cover{
+        width: 70%;
+    }
+    .btn1{
+        border-radius: 3px;
+    padding: 0.6% 5% 0.6% 5%;
+    }
+    .btn1::before{
+        border-radius: 3px;
+    }
+    .btn2{
+        border-radius: 3px;
+        font-size: 0.4rem;
+    }
+    .btn-text{
+        font-size: 0.4rem;
+    }
+    h1{
+        font-size: 0.6rem;
+        font-weight: 500;
+        color: #efefef;
+        padding-left: 2%;
+        margin-top: 5%;
+        letter-spacing: 0.3rem;
+        }
+        .card-cont .image {
+            width: 100px;
+        }
+}

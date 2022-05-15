@@ -1,0 +1,68 @@
+@media (max-width: 1200px) {
+    
+}
+
+@media (max-width: 900px) {
+    .page-title{
+        font-size: 1.2rem;
+        border-radius: 10px;
+    }
+    .select{
+        font-size: 0.8rem;
+    }
+    .h1{
+        font-size: 0.9rem;
+    }
+    .profession{
+        font-size: 0.8rem;
+    }
+    .btnpic{
+        font-size: 0.8rem;
+    }
+    .foot-list{
+        font-size: 0.8rem;
+    }
+    .foot-left p{
+        font-size: 0.8rem;
+    }
+    hr:not([size]){
+        height: 3.5px;
+    }
+}
+
+@media (max-width: 600px) {
+    hr:not([size]){
+        height: 2.5px;
+    }
+    .page-title{
+        font-size: 1rem;
+        border-radius: 7px;
+    }
+    .imge{
+        height: 150px;
+        width: 150px;
+        border: 4px solid #da2c38 ;
+    }
+    .select{
+        font-size: 0.6rem;
+    }
+    .h1{
+        font-size: 0.8rem;
+    }
+    .profession{
+        font-size: 0.6rem;
+    }
+    .btnpic{
+        font-size: 0.6rem;
+    }
+    .foot-list{
+        font-size: 0.6rem;
+    }
+    .foot-left p{
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 400px) {
+    
+}

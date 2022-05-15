@@ -1,0 +1,156 @@
+@media (max-width: 1200px) {
+    .course-img{
+        width: 90%;
+    }
+    .channel-info img{
+        width: 65px;
+        height: 65px;
+    }
+    .timg{
+        width: 80px;
+        height: 80px; 
+     }
+     .progress{
+        height: 1.5rem;
+        width: 650%;
+    }
+}
+
+@media (max-width: 900px) {
+    .courseinfo p{
+        font-size: 1.2rem;
+    }
+    .course-img{
+        width: 70%;
+    }
+    .channel-info p{
+        font-size: 0.7rem;
+    }
+    .channel-info img{
+        width: 50px;
+        height: 50px;
+    }
+    .timg{
+       width: 70px;
+       height: 70px; 
+    }
+    .progress{
+        height: 1.2rem;
+        width: 60%;
+    }
+    .mliked h3{
+        font-size: calc(0.8rem + .6vw);
+    }
+    h1{
+        font-size: 1.2rem;
+    }
+    th{
+        font-size: 0.8rem;
+    }
+    td{
+        font-size: 0.7rem;
+    }
+    .tdesc{
+        font-size: 0.7rem;
+    }
+    .tdesc h2{
+        font-size: 0.8rem;
+    }
+    .info{
+        font-size: 0.7rem;
+    }
+    .mliked{
+        font-size: 0.8rem;
+    }
+    .et{
+        font-size: 0.7rem;
+    }
+    .foot-list{
+        font-size: 0.7rem;
+    }
+    .foot-left p{
+        font-size: 0.7rem;
+    }
+    .foot-right img{
+        width: 8%;
+    }
+    .videos i{
+        font-size: 1.2rem;
+    }
+    hr:not([size]){
+        height: 3.5px;
+    }
+}
+
+@media (max-width: 600px) {
+    hr:not([size]){
+        height: 2.5px;
+    }
+    .videos i{
+        font-size: 1rem;
+    }
+    .courseinfo p{
+        font-size: 1rem;
+    }
+    .course-img{
+        width: 50%;
+    }
+    .channel-info p{
+        font-size: 0.6rem;
+    }
+    .channel-info img{
+        width: 40px;
+        height: 40px;
+    }
+    .timg{
+       width: 50px;
+       height: 50px; 
+    }
+    .progress{
+        height: 1rem;
+        width: 50%;
+    }
+    .mliked h3{
+        font-size: calc(0.7rem + .6vw);
+    }
+    h1{
+        font-size: 1rem;
+    }
+    th{
+        font-size: 0.7rem;
+    }
+    td{
+        font-size: 0.6rem;
+    }
+    .tdesc{
+        font-size: 0.6rem;
+    }
+    .tdesc h2{
+        font-size: 0.7rem;
+    }
+    .info{
+        font-size: 0.6rem;
+    }
+    .mliked{
+        font-size: 0.7rem;
+    }
+    .et{
+        font-size: 0.6rem;
+    }
+    .foot-list{
+        font-size: 0.6rem;
+    }
+    .foot-left p{
+        font-size: 0.6rem;
+    }
+    .foot-right img{
+        width: 7%;
+    }
+    .foot-right img{
+        width: 12%;
+    }
+}
+
+@media (max-width: 400px) {
+    
+}

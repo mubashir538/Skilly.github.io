@@ -1,0 +1,125 @@
+@media (max-width: 1200px) {
+    .image{
+        transform: translateY(40%);
+    }
+    .yellow{
+        top: -48%;
+        right: 31%;
+        width: 300px;
+        height: 600px;
+        transform: rotate(-77deg);
+    }
+    .white{
+    width: 400px;
+    height: 500px;
+    right: 3%;
+    bottom: -46%;
+    }
+}
+
+@media (max-width: 900px) {
+    .form-control{
+        font-size: 0.7rem;
+    }
+    .form-control:focus{
+        font-size: 0.7rem;
+    }
+    .form-control::placeholder{
+        font-size: 0.6rem;
+    }
+    h1{
+        font-size: 1.9rem;
+    }
+    p a{
+        font-size: 0.67rem;
+    }
+    .input-group-text{
+        font-size: 0.8rem;
+    }
+    .yellow{
+        top: -45%;
+        right: 28%;
+        width: 300px;
+        height: 500px;
+        transform: rotate(-77deg);
+    }
+    .white{
+        right: 1%;
+    bottom: -35%;
+    width: 300px;
+    height: 400px;
+    }
+    .image{
+        transform: translateY(70%);
+    }
+    .info{
+        font-size: 0.8rem;
+    }
+    .p2{
+        padding: 1rem 0 !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-control{
+        font-size: 0.7rem;
+    }
+    .form-control:focus{
+        font-size: 0.8rem;
+    }
+    .form-control::placeholder{
+        font-size: 0.7rem;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    p a{
+        font-size: 0.6rem;
+    }
+    .input-group-text{
+        font-size: 0.7rem;
+    }
+    .yellow{        
+        position: absolute;
+        top: -30%;
+        right: 65%;
+        width: 200px;
+        height: 400px;
+        transform: rotate(78deg);
+    }
+    body{
+        flex-direction: column-reverse;
+    }
+    .pics{
+        height: 40vh !important;
+        width: 100% !important;
+    }
+    .image{
+        transform: translateY(-25%);
+        width: 60%;
+    }
+    .white{
+    width: 250px;
+    height: 500px;
+    border-radius: 10px;
+    right: 7%;
+    bottom: -97%;
+    position: absolute;
+    transform: rotate(75deg);
+    }
+    .info{
+        height: 60vh;
+        width: 100% !important;
+    }
+    .px2{
+        padding-left: 1.3rem !important;
+        padding-right: 1.3rem !important;
+    }
+    .p2{
+        padding: 1rem 0 !important;
+    }
+}
+
+@media (max-width: 400px) {
+    
+}

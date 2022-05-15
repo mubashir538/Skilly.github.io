@@ -1,0 +1,134 @@
+body{
+    background-color: #000717;
+    padding: 0;
+    margin: 0;
+    color: #efefef;
+    display: flex;
+    align-items: center;
+}
+
+.info{
+    height: 100vh;
+    width: 50%;
+}
+
+
+.pics{
+    height: 100vh !important;
+    width: 50% !important;
+    background-color: #da2c38;
+    position: relative;
+    overflow: hidden;
+}
+.logo{
+    width: 30%;
+}
+
+.image{
+    width: 80%;
+    margin: auto;
+    clear: both;
+    padding: 10%;
+    transform: translateY(50,-50);
+}
+
+.yellow{
+    background: hsla(29, 96%, 56%, 1);
+    background: linear-gradient(180deg, hsla(29, 96%, 56%, 1) 0%, hsla(44, 96%, 56%, 1) 100%);
+    background: -moz-linear-gradient(180deg, hsla(29, 96%, 56%, 1) 0%, hsla(44, 96%, 56%, 1) 100%);
+    background: -webkit-linear-gradient(180deg, hsla(29, 96%, 56%, 1) 0%, hsla(44, 96%, 56%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FB8B24", endColorstr="#FBC224", GradientType=1 );
+    border-radius: 10px;
+    position: absolute;
+    top: -64%;
+    right: 28%;
+    width: 400px;
+    height: 800px;
+    transform: rotate(-77deg);
+}
+
+.white{
+    background-color: #efefef;
+    width: 500px;
+    height: 700px;
+    border-radius: 10px;
+    right: -8%;
+    bottom: -68%;
+    position: absolute;
+    transform: rotate(12deg);
+}
+
+
+.form-control{
+    border: 3px solid #efefef;
+    border-width: 0 0 3px 0;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #efefef;
+    font-size: 1.2rem;
+}
+
+.form-control:invalid{
+    border-color: #fd0011;
+    color: #fd0011;
+}
+.form-control:focus{
+    border: 3px solid #efefef;
+    border-width: 0 0 3px 0;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #efefef;
+    font-size: 1.2rem;
+}
+
+.form-control::placeholder{
+    color: #efefef;
+    font-weight: 200;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    opacity: 0.7;
+    padding-left: 3%;
+}
+h1{
+    color: #da2c38;
+    font-size: 3rem;
+    font-weight: 700;
+}
+p a{
+    color: #da2c38;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 500ms ease;
+}
+p a:hover{
+    letter-spacing: 3px;
+    color: #da2c38;
+}
+p{
+    font-weight: 300;
+   
+}
+.site img{
+    width: 25%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.input-group-text{
+    color: #efefef;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+}

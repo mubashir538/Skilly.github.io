@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skilly | Video Player</title>
+<style>
+ .Home{
+        background-color:transparent; 
+        border:3px solid #D90429;
+        color: #D90429;
+        padding: 0.5% 2% 0.5% 2%;
+        border-radius: 8px;
+        margin-top: 1%;
+        margin-left: 90%;
+        margin-right: 1%;
+    }    
+body{
+    background-color:#000717;
+    font-family:'Montserrat';
+}
+.video{
+    color: #efefef;
+    font-size: 28px;
+    text-align: center;
+    
+}
+.player{
+    padding: 3% 3% 3% 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+.line{
+    width: 50%;
+    justify-content: center;
+}
+.pak{
+    font-weight: 100;
+    font-size: 18px;
+    text-align: center;
+    color:#efefef; 
+    opacity: 0.5;
+    letter-spacing: 0.2rem;
+}
+.pak::before{
+    content: ".";
+}
+
+
+.pak::after{
+    content: ".";
+}
+.para{
+    color:#efefef;
+    text-align: center;
+    font-size: 20px
+}
+.name{
+    color:#efefef;
+    text-align: center;
+    font-size: 20px;
+    font-size: 30px;
+
+}
+h1{
+    color: #D90429;
+    text-align:start;
+    padding:0.5% 5% 0.5% 5%;
+    
+}
+.s{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 0%;
+}
+.second{
+    color: #D90429;
+    display: flex;
+}
+.footer{
+    background: hsla(29, 96%, 56%, 1);
+background: linear-gradient(180deg, hsla(29, 96%, 56%, 1) 0%, hsla(44, 96%, 56%, 1) 100%);
+background: -moz-linear-gradient(180deg, hsla(29, 96%, 56%, 1) 0%, hsla(44, 96%, 56%, 1) 100%);
+background: -webkit-linear-gradient(180deg, hsla(29, 96%, 56%, 1) 0%, hsla(44, 96%, 56%, 1) 100%);
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FB8B24", endColorstr="#FBC224", GradientType=1 );
+}
+.categories img{
+    width: 100%;
+}
+
+.foot-list{
+    margin: auto;
+    padding: 10% 7% 3% 7%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    justify-content: space-around;
+    font-weight: 300;
+    
+}
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+.footer hr{
+    width: 60%;
+    background-color: #000717;
+    border-radius: 5px;
+    height: 5px;
+    border: none;
+}
+
+.foot{
+    display: flex;
+    padding: 5% 5% 3% 5%;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foot-left{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.foot-right{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+
+iframe{
+    margin-left: auto;
+    margin-right: auto;
+    justify-self: center;
+    align-self: center;
+    border-radius: 10px;
+    filter: drop-shadow(5px 5px 7px #000);
+}
+.image img{
+    border-radius:500px;
+    width:100%
+}
+.image{
+    width:10%;
+
+}
+.a{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 14%;
+}
+
+.name1{
+    margin-bottom: 1%;
+}
+
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   <a href="../home page/home.html"> <button class="Home">Home</button></a>
+    <div class="player">
+        <iframe width="90%" height="550px" src="https://www.youtube.com/embed/lreNAOcjtCE" title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p class="video">Toyota Mark X 300G Premium | Owner Review | PakWheels</p>
+    <br><br>
+    <p class="pak">PakWheels</p>
+    <hr class="line">
+    <div>
+        <h1>About Teacher</h1>
+        <div class="a">
+
+            <div class="image">
+                <img src="person.jpg" >
+            </div>
+            <div class="name">
+                <p class="name1">Hafiz Basit  Ali</p>
+                <p class="s">HBA Services</p>
+            </div>
+        </div>
+        <p class="para">
+        I'm a Freelancer & Youtuber.Currently, I'm running a successful Educational channel with over 300k subscribers <br> where I have been training people about 
+        freelancing mostly on Fiverr and how they can make money online. <br> I have a wide marketing experience in many fields. Can help you to grow your Freelance Career
+        on Fiverr. 
+        </p>
+        <br><br>
+        <hr class="line">
+        <h1 class="second">Course Rating</h1>
+    </div>
+    <div class="footer">
+        <div class="foot-list">
+            <a>About</a>
+            <a href="../Instructor page/instructor.html">Instructors</a>
+            <a href="../Privacy policy page/index.html">Privacy Policy</a>
+            <a href="../Instructor page/instructor.html">Channel Links</a>
+        </div>
+        <hr>
+        <div class="foot">
+            <div class="foot-left">
+                <img src="../copyright.png" alt="" width="10%">
+                <p style="display: inline-block; padding-left: 4%;">2022. All Rights Reserved</p>
+            </div>
+            <div class="foot-right">
+                <img src="../facebook.png" alt="" width="15%">
+                <img src="../g5.png" alt="" width="15%">
+                <img src="../google.png" alt="" width="30%">
+            </div>
+        </div>
+    </div>
+    
+        
+</body>
+</html>
