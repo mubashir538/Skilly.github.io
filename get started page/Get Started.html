@@ -1,0 +1,348 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/dd40dccb92.js" crossorigin="anonymous"></script>
+    <title>Get Started Page</title>
+    <style>
+        body {
+            background-color: #000717;
+            margin: 0;
+            color: #efefef;
+        }
+        .image img{
+            border-radius: 7px;
+        }
+
+        .lists {
+            align-items: center;
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+
+        .lists .nav-item {
+            position: relative;
+        }
+
+        .lists .nav-item::after {
+            height: 4px;
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 120%;
+            background: #000717;
+            width: 80%;
+            right: 0;
+            border-radius: 5px;
+            margin: 2% auto 1% auto;
+            transform: scaleX(0);
+            transition: transform 500ms ease;
+        }
+
+        .table {
+            height: 200px;
+            overflow-y: hidden;
+        }
+
+        .lists .nav-item.new:after {
+            height: 4px;
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 90%;
+            background: #000717;
+            width: 80%;
+            right: 0;
+            border-radius: 5px;
+            transform: scaleX(0);
+            transition: transform 500ms ease;
+        }
+
+        .lists a:hover {
+            color: #efefef;
+        }
+
+        .lists .nav-item:hover:after {
+            transform: scaleX(1);
+        }
+
+        .header {
+            background-color: #da2c38;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 1%;
+            border-radius: 0 0 10px 10px;
+            padding-right: 3%;
+        }
+
+        a {
+            text-decoration: none;
+            color: currentColor;
+        }
+
+        .jawad {
+            margin: 13% auto 13% auto;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .par {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            font-size: 1.9rem;
+            margin: 5%;
+            width: 45%;
+        }
+
+        .para {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            font-size: 1.9rem;
+            width: 45%;
+        }
+
+        .Sign {
+            background-color: #da2c38;
+            color: white;
+            padding: 2%;
+            width: 40%;
+            font-size: 28px;
+            margin: 3% auto;
+            border-radius: 34px;
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .btun {
+            display: flex;
+            justify-content: center
+        }
+
+        h1 {
+            color: #da2c38;
+            font-size: 4.5rem;
+            margin-left: 25%;
+        }
+
+        h2 {
+            color: #da2c38;
+            font-size: 4.5rem;
+        }
+
+        .image1 {
+            width: 30%;
+        }
+
+        .image {
+            width: 30%;
+        }
+
+        .image2 {
+            width: 30%;
+        }
+
+        .image3 {
+            width: 30%;
+        }
+
+        .image4 {
+            width: 30%;
+        }
+
+        .image5 {
+            width: 30%;
+        }
+
+        .selected {
+            background-color: #000717;
+            border-radius: 5px;
+            padding: 2% 4% 2% 4%;
+            color: #FB8B24;
+        }
+
+        .select {
+            background-color: #000717;
+            color: #FB8B24;
+            padding: 2% 4% 2% 4%;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-weight: 400;
+            border: none;
+        }
+
+        .footer {
+            background: hsla(29, 96%, 56%, 1);
+            background: linear-gradient(180deg, hsla(29, 96%, 56%, 1) 0%, hsla(44, 96%, 56%, 1) 100%);
+            background: -moz-linear-gradient(180deg, hsla(29, 96%, 56%, 1) 0%, hsla(44, 96%, 56%, 1) 100%);
+            background: -webkit-linear-gradient(180deg, hsla(29, 96%, 56%, 1) 0%, hsla(44, 96%, 56%, 1) 100%);
+            filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FB8B24", endColorstr="#FBC224", GradientType=1);
+            color: #000717;
+        }
+
+        .foot-list {
+            margin: auto;
+            padding: 10% 7% 3% 7%;
+            display: flex;
+            align-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            justify-content: space-around;
+            font-weight: 300;
+        }
+
+        .foot-list a:hover {
+            color: #efefef;
+            font-weight: 600;
+            transform: translateY(-20%);
+        }
+
+        hr:not([size]) {
+            height: 5px;
+        }
+
+        .footer hr {
+            width: 60%;
+            background-color: #000717;
+            border-radius: 5px;
+            height: 5px;
+            border: none;
+            margin: auto;
+        }
+
+        .foot {
+            display: flex;
+            padding: 5% 5% 3% 5%;
+            align-content: center;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .foot-left {
+            display: flex;
+            align-content: center;
+            align-items: center;
+        }
+
+        .foot-right {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: flex-end;
+        }
+    </style>
+    <link rel="stylesheet" href="Get started.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <div class="navbar navbar-expand-md header">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fas fa-bars" style="color: #efefef;"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul data-aos="fade-left" class="navbar-nav py-4 justify-content-center lists">
+                <li class="nav-item px-3 ">
+                    <a aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a href="../Category page/category.html">Categories</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a href="../Instructor page/instructor.html">Instructor</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a href="../Courses page/Courses.html">Courses</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a href="../About us/aboutus.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="jawad">
+        <div data-aos="fade-right" class="image1">
+            <img src="Group 129 (1).png" alt="" width="100%">
+        </div>
+        <div data-aos="fade-left" class="par">
+            <h1 data-aos="zoom-in"> <strong>Skilly</strong></h1>
+            <p>Lets Learn new Skill with Our Skilly.We will Polish you with our great Mentors on our Website so you can
+                established a good and relatable environment for studying </p>
+        </div>
+    </div>
+    <h1>Our Website Images</h1>
+    <div class="jawad ">
+        <div class="image shadow-lg px-2">
+            <img src="rate page.png" alt="" width="100%">
+        </div>
+        <div class="image shadow-lg px-2">
+            <img src="account info page.png" alt="" width="100%">
+        </div>
+        <div class="image shadow-lg px-2">
+            <img src="assignment page.png" alt="" width="100%">
+        </div>
+    </div>
+
+
+    <div class="jawad">
+        <div data-aos="fade-right" class="para">
+            <h2 data-aos="zoom-in"> <strong>Let's Sign You Up</strong> </h2>
+            <p>After signing on this site you will be able
+                to accces a whole lot of features for this
+                Website
+                Don't worry,it totally free </p>
+        </div>
+        <div data-aos="fade-left" class="image5">
+            <img src="Group 6.png" alt="" width="100%">
+        </div>
+    </div>
+    <form action="../login signup page/signup.html">
+        <div class="btun">
+            <a data-aos="zoom-in" class="Sign">Sign Up</a>
+        </div>
+    </form>
+    <div class="footer">
+        <div class="foot-list">
+            <a href="../About us/aboutus.html">About</a>
+            <a href="../Instructor page/instructor.html">Instructors</a>
+            <a href="../Privacy policy page/index.html">Privacy Policy</a>
+            <a href="../Instructor page/instructor.html">Channel Links</a>
+        </div>
+        <hr data-aos="fade-right">
+        <div class="foot">
+            <div class="foot-left">
+                <img src="copyright.png" alt="" width="10%">
+                <p style="display: inline-block; padding-left: 4%;">2022. All Rights Reserved</p>
+            </div>
+            <div class="foot-right">
+                <img src="facebook.png" alt="" width="15%" class="px-2">
+                <img src="g5.png" alt="" width="15%" class="px-2">
+                <img src="google.png" alt="" width="30%" class="px-2">
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+        offset: 170,
+        duration: 600
+        });
+    </script>
+</body>
+
+</html>

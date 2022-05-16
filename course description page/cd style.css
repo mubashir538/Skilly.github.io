@@ -30,6 +30,15 @@ body{
     transition: transform 500ms ease;
 }
 
+.btns{
+    display: flex;
+    width: 100%;
+}
+
+.btn-outline-danger{
+    border: 5px solid #da2c38;
+}
+
 .lists .nav-item.new:after{
     height: 4px;
     content: "";
@@ -68,7 +77,9 @@ a{
     color: currentColor;
 }
 
-
+a:hover{
+    color: currentColor;
+}
 .coursebox{
     background: hsla(29, 96%, 56%, 1);
     background: linear-gradient(180deg, hsla(29, 96%, 56%, 1) 0%, hsla(44, 96%, 56%, 1) 100%);

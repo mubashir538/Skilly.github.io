@@ -1,0 +1,73 @@
+@media (max-width: 1200px) {
+    .par{
+        font-size: 1.15rem;
+    }
+    .para{
+        font-size: 1.15rem;
+    }
+    .fm{
+        font-size: 0.8rem;
+    }
+    h1{
+        font-size: 2.85rem;
+    }
+    h2{
+        font-size: 2.85rem;
+    }
+    .selected{
+        font-size: 0.8rem;
+    }
+    .foot-list{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 900px) {
+    .par{
+        font-size: 1.05rem;
+    }
+    .para{
+        font-size: 1.05rem;
+    }
+    .fm{
+        font-size: 0.7rem;
+    }
+    h1{
+        font-size: 2.45rem;
+    }
+    h2{
+        font-size: 2.45rem;
+    }
+    .selected{
+        font-size: 0.7rem;
+    }
+    .foot-list{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .par{
+        font-size: 0.95rem;
+    }
+    .para{
+        font-size: 00.95rem;
+    }
+    .fm{
+        font-size: 0.6rem;
+    }
+    h1{
+        font-size: 2.25rem;
+    }
+    h2{
+        font-size: 2.25rem;
+    }
+    .selected{
+        font-size: 0.6rem;
+    }
+    .foot-list{
+        font-size: 0.6rem;
+    }
+}
+@media (max-width: 400px) {
+
+}

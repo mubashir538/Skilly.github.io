@@ -12,6 +12,19 @@ body{
     width: 50%;
 }
 
+.p1{
+    color: #efefef;
+}
+.p2{
+    color: #efefef;
+}
+.p3{
+    color: #efefef;
+}
+
+.input-group-text i:hover{
+    cursor: pointer;
+}
 
 .pics{
     height: 100vh !important;

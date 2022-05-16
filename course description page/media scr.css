@@ -14,6 +14,9 @@
         height: 1.5rem;
         width: 650%;
     }
+    .btn{
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 900px) {
@@ -80,9 +83,18 @@
     hr:not([size]){
         height: 3.5px;
     }
+    .btn{
+        font-size: 0.6rem;
+    }
 }
 
 @media (max-width: 600px) {
+    .btns{
+        flex-direction: column;
+    }
+    .m-3{
+        margin: 0.7rem !important;
+    }
     hr:not([size]){
         height: 2.5px;
     }

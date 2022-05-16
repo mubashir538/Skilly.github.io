@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skilly | SignUp</title>
+    <link rel="shortcut icon" href="../skilly-logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/dd40dccb92.js" crossorigin="anonymous"></script>
@@ -18,31 +19,39 @@
 </head>
 <body>
     <div class="info px-5 px2">
+        <a href="../get started page/Get Started.html">
        <img src="arrow_right_alt-1.png" class="p-4 p2" alt="">
-       <h1>Sign Up</h1>
-       <p>Secure your Connections with Skilly</p>
-       <div class="input-group">
+    </a>
+       <h1 data-aos="fade-right">Sign Up</h1>
+       <p data-aos="fade-right">Secure your Connections with Skilly</p>
+       <div data-aos = "zoom-in" class="input-group">
        <i class="fas fa-user-alt input-group-text" id="basic-addon1"></i>
        <input type="text" placeholder="Name" class="form-control my-2" aria-describedby="basic-addon1">
         </div>
-        <div class="input-group">
+        <div data-aos = "zoom-in" class="input-group">
             <i class="fas fa-at input-group-text" ></i>     
        <input type="email" placeholder="Email" class="form-control my-2" >
        </div>
-       <div class="input-group">
+       <div class="input-group" data-aos = "zoom-in">
         <i class="fas fa-key input-group-text" ></i>  
-       <input type="password" placeholder="Password" class="form-control my-2">
-       <i class="fas fa-eye-slash input-group-text"></i>
+       <input type="password" placeholder="Password" class="form-control my-2" id="pass" oninput="check()">
+       <i class="fas fa-eye-slash input-group-text pas1"></i>
         </div>
-       <i class="fas fa-circle-notch my-2" style="color: #efefef;"></i> Least 8 Characters
+        <div class="p1">
+            <i class="fas fa-circle-notch my-2 a1" style="color: #efefef;"></i> Least 8 Characters
+        </div>
        <br>
-       <i class="fas fa-circle-notch my-2" style="color: #efefef;"></i> Least 1 Number or an Alphabet
+       <div class="p2">
+           <i class="fas fa-circle-notch my-2 a2" style="color: #efefef;"></i> Least 1 Number or a symbol
+        </div>
        <br>
-       <i class="fas fa-circle-notch my-2" style="color: #efefef;"></i> Lowercase (a-z) or Uppercase (A-B)
-       <div class="input-group">
+       <div class="p3">
+           <i class="fas fa-circle-notch my-2 a3" style="color: #efefef;"></i> Lowercase (a-z) and a Uppercase (A-B)
+        </div>
+       <div class="input-group" data-aos = "zoom-in">
         <i class="fas fa-shield-alt input-group-text"></i>  
-       <input type="password" placeholder="Confirm Password" class="form-control my-2">
-       <i class="fas fa-eye-slash input-group-text"></i>
+       <input type="password" placeholder="Confirm Password" class="form-control my-2" id="pass2">
+       <i class="fas fa-eye-slash input-group-text pas2"></i>
        </div>
        <div class="buttons">
            <a class="btn rounded-pill my-2 p-2 w-25" style="background-color: #da2c38; color: #efefef; font-size: 1.1rem; font-weight: 500;" href="../index.html">SignUp <i class="fas fa-chevron-right"></i></a>
@@ -59,19 +68,99 @@
         <div class="logo float-end">
             <img src="../small-logo.png" alt="" width="100%">
         </div>
-        <div class="image">
+        <div class="image" data-aos="zoom-in-up">
             <img src="../home page/1x/Group 32.png" alt="" width="100%">
         </div>
         <div class="white"></div>
+        <!-- data-aos="fade-up-right" -->
 
     </div>
     <div class="yellow"></div>
+    <!-- data-aos="fade-down-left" -->
+    <script>
+        $('.pas1').click(function(){
+            var x = document.getElementById("pass");
+         if (x.type === "password") {
+            x.type = "text";
+            $('.pas1').removeClass('fa-eye-slash');
+            $('.pas1').addClass('fa-eye');
+        } else {
+             x.type = "password";
+            $('.pas1').removeClass('fa-eye');
+            $('.pas1').addClass('fa-eye-slash');
+        } 
+        });
+        $('.pas2').click(function(){
+            var x = document.getElementById("pass2");
+         if (x.type === "password") {
+            x.type = "text";
+            $('.pas2').removeClass('fa-eye-slash');
+            $('.pas2').addClass('fa-eye');
+        } else {
+             x.type = "password";
+            $('.pas2').removeClass('fa-eye');
+            $('.pas2').addClass('fa-eye-slash');
+        } 
+        });
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        function check()
+        {
+            const val = document.getElementById('pass').value;
+            const len = document.getElementById('pass').value.length;
+            if(len >=8)
+            {
+                $('.a1').removeClass('fa-circle-notch');
+                $('.a1').addClass('fa-check');
+                $('.p1').css('color','#1ae000');
+                $('.a1').css('color','#1ae000');
+            }
+            else{
+                $('.a1').addClass('fa-circle-notch');
+                $('.a1').removeClass('fa-check');
+                $('.p1').css('color','#efefef');
+                $('.a1').css('color','#efefef');
+            }
+            var format = /[!@#$%^&*()_+\-=\[\]1234567890{};':"\\|,.<>\/?]+/;
+            if(format.test(val))
+            {
+                $('.a2').removeClass('fa-circle-notch');
+                $('.a2').addClass('fa-check');
+                $('.p2').css('color','#1ae000');
+                $('.a2').css('color','#1ae000');
+            }
+            else{
+                console.log("False");
+                $('.a2').addClass('fa-circle-notch');
+                $('.a2').removeClass('fa-check');
+                $('.p2').css('color','#efefef');
+                $('.a2').css('color','#efefef');
+            }
+            var alpha = /[abcdefghijklmnopqrstuvwxyz]/;
+            var cap = /[ABCDEFGHIJKLMNOPQRSTUVWXYZ]/;
+            if(alpha.test(val) && cap.test(val))
+            {
+                $('.a3').removeClass('fa-circle-notch');
+                $('.a3').addClass('fa-check');
+                $('.p3').css('color','#1ae000');
+                $('.a3').css('color','#1ae000');
+            }
+            else{
+                $('.a3').addClass('fa-circle-notch');
+                $('.a3').removeClass('fa-check');
+                $('.p3').css('color','#efefef');
+                $('.a3').css('color','#efefef');
+            }
+        }
+    </script>
     <script>
         AOS.init({
             offset: 170,
             duration: 600
         });
+
+
       </script>
 </body>
 </html>

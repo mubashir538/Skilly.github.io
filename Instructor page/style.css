@@ -135,6 +135,7 @@ h1{
 }
 
 
+
 .imge{
     height: 200px;
     width: 200px;
@@ -239,6 +240,9 @@ color: #000717;
 a{
     text-decoration: none;
     color: currentColor;
+}
+.card-content a:hover{
+    color: #efefef;
 }
 .footer hr{
     width: 60%;

@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/dd40dccb92.js" crossorigin="anonymous"></script>
     <script src="../jquery.js"></script>
+    <link rel="shortcut icon" href="../skilly-logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,20 +45,25 @@
 </div>
 
 <div class="coursebox">
-    <div class="course-img px-4 py-5">
+    <div class="course-img px-4 py-5" data-aos="fade-right">
         <img src="c++ programming.jpg" alt="" class="img-responsive">
     </div>
     <div class="courseinfo px-4">
-        <p>C++ Programming Course</p>
+        <p data-aos="zoom-in-down">C++ Programming Course</p>
         <div class="channel-info">
-            <img src="Tech-IQ-logo.gif" alt="" class="img rounded-circle">
-            <p class="px-3">Tech-IQ</p>
+            <img src="Tech-IQ-logo.gif" data-aos="zoom-in-left" alt="" class="img rounded-circle">
+            <p class="px-3" data-aos="zoom-in-right">Tech-IQ</p>
+        </div>
+        <div class="btns" data-aos="zoom-in-up">
+            <button type="button" class="btn btn-outline-danger m-3"><a href="../assignment submission page/Assignment Submission.html">Submit Assignment</a></button>
+            <button type="button" class="btn btn-outline-danger m-3"><a href="../rate course page/">Rate This Course</a></button>
         </div>
     </div>
 </div>
 
-<h1>Lessons in this Class</h1>
-<div class="videos px-4 py-4 shadow">
+<h1 data-aos="zoom-out-up">Lessons in this Class</h1>
+<div class="videos px-4 py-4 shadow" data-aos="flip-up">
+    <div class="collapse" id="collapseExample">
     <table class="table table-hover table-borderless table-sm">
         <tr>
             <th>S.No</th>
@@ -82,35 +88,46 @@
         <tr>
             <td>001</td>
             <td>Introduction to this Course</td>
+            <td>06:00</td>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>Introduction to this Course</td>
+            <td>05:00</td>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>Introduction to this Course</td>
             <td>05:00</td>
         </tr>
     </table>
-    <i class="fas fa-chevron-down "></i>
+</div>
+    <i class="fas fa-chevron-down " data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></i>
 </div>
 
 <hr>
 
-<h1>About Teacher</h1>
+<h1 data-aos="zoom-out-up">About Teacher</h1>
 <div class="tinfo">
-    <div class="timg m-4 shadow">
+    <div class="timg m-4 shadow" data-aos="zoom-in-right">
         <img src="profile.jpg" alt="" class="w-100 rounded-circle">
     </div>
-    <div class="tdesc">
+    <div class="tdesc" data-aos="zoom-in-left">
         <h2>Mubashir Ahmed</h2>
         <p>Tech-IQ</p>
     </div>
 </div>
 
-<div class="info w-75 p-2 m-auto text-center">
+<div class="info w-75 p-2 m-auto text-center" data-aos="fade-up">
 I'm a Student and also a Youtuber. I'm trying to give the new Students in Pakistan a skill to live and trying to 
 give the youth, a exposure about Technology from the very Basic.
 </div>
 
 <hr>
 
-<h1>Course Rating</h1>
+<h1 data-aos="zoom-out-up">Course Rating</h1>
 
-<div class="mliked px-3 py-4 mx-5 my-4 w-50 shadow float-end">
+<div class="mliked px-3 py-4 mx-5 my-4 w-50 shadow float-end" data-aos="fade-left">
     <h3 class="text-center">Most Liked</h3>
     <div class="et my-2 rounded">
         <i class="fas fa-heart m-3"></i>
@@ -126,7 +143,7 @@ give the youth, a exposure about Technology from the very Basic.
     </div>
 </div>
 
-<div class="mliked w-50 px-3 py-5 mx-5 my-5 shadow " style="clear: both;">
+<div class="mliked w-50 px-3 py-5 mx-5 my-5 shadow " data-aos="fade-right" style="clear: both;">
     <h3 class="text-center">Expectations Met?</h3>
     <div class="op">
         <p>Exceeded!</p>
@@ -190,6 +207,19 @@ give the youth, a exposure about Technology from the very Basic.
             
         }
     });
+
+    $(".fas").on("click", function() {
+    console.log("Hello");
+    if($(".fas").hasClass("fa-chevron-down")){
+        $('.fas').addClass('fa-chevron-up');
+        $('.fas').removeClass('fa-chevron-down');
+
+    } else {
+        $('.fas').addClass('fa-chevron-down');
+        $('.fas').removeClass('fa-chevron-up');
+    };
+});
+
 </script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>

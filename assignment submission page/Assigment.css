@@ -1,0 +1,54 @@
+@media (max-width: 1200px) {
+    .form-control{
+        font-size: 0.8rem;
+    }
+    .form-control:focus{
+        font-size: 0.8rem;
+    }
+    .form-control::placeholder{
+        font-size: 0.7rem;
+    }
+    h1{
+        font-size: 2.4rem;
+    }
+    .Submit{
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 900px) {
+    .form-control{
+        font-size: 0.7rem;
+    }
+    .form-control:focus{
+        font-size: 0.7rem;
+    }
+    .form-control::placeholder{
+        font-size: 0.6rem;
+    }
+    h1{
+        font-size: 2.3rem;
+    }
+    .Submit{
+        font-size: 1.2rem;
+    }    
+}
+@media (max-width: 600px) {
+    .form-control{
+        font-size: 0.6rem;
+    }
+    .form-control:focus{
+        font-size: 0.6rem;
+    }
+    .form-control::placeholder{
+        font-size: 0.5rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .Submit{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 400px) {
+    
+}

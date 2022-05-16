@@ -1,0 +1,160 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dd40dccb92.js" crossorigin="anonymous"></script>
+    <script src="../jquery.js"></script>
+    <link rel="stylesheet" href="mediascreens.css">
+    <title>Assignment Submission Page</title>
+    <style>
+        body {
+            padding: 0%;
+            margin: 0%;
+            background: url("assignment.jpg");
+            background-size: cover;
+            color: #efefef;
+        }
+
+        h1 {
+            font-weight: 700;
+        }
+
+        .form {
+            background-color: #da2c3885;
+            width: 90%;
+            border-radius: 20px;
+            margin: 3% auto;
+
+        }
+
+        .form-control {
+            border: 3px solid #efefef;
+            border-width: 0 0 3px 0;
+            background-color: transparent;
+            border-top: none;
+            width: 50%;
+            border-left: none;
+            border-right: none;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            color: #efefef;
+            font-size: 1.2rem;
+        }
+
+        .form-control:invalid {
+            border-color: #fd0011;
+            color: #fd0011;
+        }
+
+        .form-control:focus {
+            border: 3px solid #efefef;
+            border-width: 0 0 3px 0;
+            background-color: transparent;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            color: #efefef;
+            font-size: 1.2rem;
+        }
+
+        .form-control::placeholder {
+            color: #efefef;
+            font-weight: 200;
+            font-size: 1.2rem;
+            letter-spacing: 3px;
+            opacity: 0.7;
+            padding-left: 3%;
+        }
+
+        .logo {
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        .Submit {
+            background-color: transparent;
+            color: white;
+            width: 40%;
+            padding: 1% 15% 1% 15%;
+            font-size: 2rem;
+            margin: 3% auto;
+            border-radius: 34px;
+            border: solid white;
+        }
+
+        .btun {
+            display: flex;
+            justify-content: center
+        }
+
+        .img {
+            width: 5%;
+        }
+
+        .logo {
+            width: 20%;
+
+        }
+
+        input[type=file]::file-selector-button 
+        {
+            color: #efefef;
+            font-size: 1.4rem;
+            font-family: 'Montserrat';
+            border: none;
+            border-radius: 6px;
+            padding: 0.5rem 2rem ;
+    background: hsla(29, 96%, 56%, 1);
+background: linear-gradient(180deg, hsla(29, 96%, 56%, 1) 0%, hsla(44, 96%, 56%, 1) 100%);
+background: -moz-linear-gradient(180deg, hsla(29, 96%, 56%, 1) 0%, hsla(44, 96%, 56%, 1) 100%);
+background: -webkit-linear-gradient(180deg, hsla(29, 96%, 56%, 1) 0%, hsla(44, 96%, 56%, 1) 100%);
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FB8B24", endColorstr="#FBC224", GradientType=1 );
+        }
+    </style>
+    <link rel="stylesheet" href="Assigment.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <a href="../course description page/cd.html">
+    <div data-aos="fade-right" class="img m-4">
+        <img src="jawad.png" alt="" width="100%">
+    </div>
+</a>
+    <h1 data-aos="fade-right" class="my-5 ps-5 w-50">Let's Submit Your Assignment</h1>
+
+    <div class="form p-5 ">
+        <div data-aos="zoom-in" class="logo float-end">
+            <img src="small-logo.png" alt="" width="100%">
+        </div class="form-control">
+        <form data-aos="zoom-in " action="jawad">
+            <input type="text" placeholder="Your Name" class="form-control my-2" aria-describedby="basic-addon1">
+            <input type="text" placeholder="Your Student ID" class="form-control my-2" aria-describedby="basic-addon1">
+            <input class="py-4 button" type="file" id="myfile" name="myfile"> <br>
+            <div data-aos="zoom-in" class="btun">
+                <input type="submit" class="Submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    </form>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

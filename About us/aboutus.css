@@ -1,0 +1,55 @@
+@media (max-width: 1200px){
+
+}
+@media (max-width: 900px){
+    .body{
+        width: 70%;
+    }
+    body{
+        font-size: 0.7rem;
+    }
+    h1{
+        font-size: 1.6rem;
+    }
+    h3{
+        font-size: 1.6rem;
+    }
+    .para{
+        font-size: 1.2rem;
+    }
+    .par{
+        font-size: 1.2rem;
+    }
+    .foot-list{
+        font-size: 0.7rem;
+    }
+}
+@media (max-width: 600px){
+    body ,p{
+        font-size: o.6rem;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    .para{
+        font-size: 1rem;
+    }
+    .par{
+        font-size: 1rem;
+    }
+    .foot-list{
+        font-size: 0.6rem;
+    }
+    .body{
+        width: 90%;
+    }
+    .img{
+        width: 40%;
+    }
+}
+@media (max-width: 400px){
+    
+}
