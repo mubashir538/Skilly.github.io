@@ -1,0 +1,61 @@
+@media(max-width:1200px){
+
+}
+@media(max-width:900px){
+    .lists{
+        font-size: 0.9rem;
+    }
+    .video{
+        font-size: 2rem;
+    }
+    .pak{
+        font-size: 2rem;
+    }
+    
+    .tdesc{
+        font-size: 0.8rem;
+    }
+    .tdesc h2{
+        font-size: 0.9rem;}
+    
+    .info{
+        font-size: 0.85rem}
+    .mliked{
+        font-size:0.9rem;
+        }
+        .et{
+            font-size: 0.8rem;}
+            .foot-list{
+                font-size: 0.8rem;}
+    
+}
+@media(max-width:600px){
+.lists{
+    font-size: 0.7rem;
+}
+.video{
+    font-size: 1rem;
+}
+.pak{
+    font-size: 1rem;
+}
+
+.tdesc{
+    font-size: 0.6rem;
+}
+.tdesc h2{
+    font-size: 0.7rem;}
+
+.info{
+    font-size: 0.65rem}
+.mliked{
+    font-size:0.7rem;
+    }
+    .et{
+        font-size: 0.6rem;}
+        .foot-list{
+            font-size: 0.6rem;}
+}
+@media(max-width:400px){
+
+}
