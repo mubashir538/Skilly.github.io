@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <style>
  .header{
-    height: 30%;
     background-color: #da2c38;
     display: flex;
     flex-direction: row;
@@ -28,7 +27,7 @@
 .lists{
     align-items: center;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .lists .nav-item{
@@ -63,6 +62,9 @@
     transform: scaleX(0) ;
     transition: transform 500ms ease;
 }
+.lists a{
+    color: #efefef;
+}
 
 .lists a:hover{
     color: #efefef;
@@ -78,7 +80,7 @@ body{
 }
 .video{
     color: #efefef;
-    font-size: 3rem;
+    font-size: 1.5rem;
     text-align: center;
     
 }
@@ -89,13 +91,9 @@ body{
     align-items: center;
     margin-top: 3%;
 }
-.line{
-    width: 50%;
-    justify-content: center;
-}
 .pak{
     font-weight: 100;
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: center;
     color:#efefef; 
     opacity: 0.5;
@@ -104,37 +102,58 @@ body{
 .pak::before{
     content: ".";
 }
-
-
 .pak::after{
     content: ".";
 }
-.para{
-    color:#efefef;
-    text-align: center;
-    font-size:3rem;
+.footer{
+    background: hsla(29, 96%, 56%, 1);
+background: linear-gradient(180deg, hsla(29, 96%, 56%, 1) 0%, hsla(44, 96%, 56%, 1) 100%);
+background: -moz-linear-gradient(180deg, hsla(29, 96%, 56%, 1) 0%, hsla(44, 96%, 56%, 1) 100%);
+background: -webkit-linear-gradient(180deg, hsla(29, 96%, 56%, 1) 0%, hsla(44, 96%, 56%, 1) 100%);
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FB8B24", endColorstr="#FBC224", GradientType=1 );
+color: #000717;
 }
-.name{
-    color:#efefef;
-    text-align: center;
-    font-size: 20px;
-    font-size: 30px;
 
-}
-h1{
-    color: #D90429;
-    text-align:start;
-    padding:0.5% 5% 0.5% 5%;
-    
-}
-.s{
-    font-size: 15px;
-    font-weight: 400;
-    margin-top: 0%;
-}
-.second{
-    color: #D90429;
+.foot-list{
+    margin: auto;
+    padding: 10% 7% 3% 7%;
     display: flex;
+    align-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    justify-content: space-around;
+    font-weight: 300;
+}
+
+.foot-list a:hover{
+    color: #efefef;
+    font-weight: 600;
+    transform: translateY(-20%);
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+hr{
+    width: 60%;
+    background-color: #efefef;
+    border-radius: 20px;
+    height: 20px;
+    margin: 5% auto;
+    border: none;
+    opacity: 1;
+}
+hr:not([size]) {
+    height: 5px;
+}
+.footer hr{
+    width: 60%;
+    background-color: #000717;
+    border-radius: 5px;
+    height: 5px;
+    border: none;
+    margin: auto;
 }
 .tinfo{
     display: flex;
@@ -145,7 +164,6 @@ h1{
 .timg{
     width: 100px;
     height: 100px;
-    border-radius:80px;
 }
 .tdesc{
     display: flex;
@@ -166,6 +184,7 @@ h1{
 .info{
     font-size: 1.3rem;
     font-weight: 400;
+    color: #efefef;
 }
 .op{
     color: #efefef7e;
@@ -177,6 +196,11 @@ h1{
 .progress{
     height: 2rem;
     width: 70%;
+}
+.videos i{
+    text-align: center; 
+    color: #efefef; 
+    font-size: 2rem; 
 }
 .mliked{
     background-color: #264653a1;
@@ -194,43 +218,6 @@ h1{
     align-items: center;
     font-weight: 300;
 }
-.footer{
-    background: hsla(29, 96%, 56%, 1);
-background: linear-gradient(180deg, hsla(29, 96%, 56%, 1) 0%, hsla(44, 96%, 56%, 1) 100%);
-background: -moz-linear-gradient(180deg, hsla(29, 96%, 56%, 1) 0%, hsla(44, 96%, 56%, 1) 100%);
-background: -webkit-linear-gradient(180deg, hsla(29, 96%, 56%, 1) 0%, hsla(44, 96%, 56%, 1) 100%);
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FB8B24", endColorstr="#FBC224", GradientType=1 );
-color: #000717;
-}
-.foot-list{
-    margin: auto;
-    padding: 10% 7% 3% 7%;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    justify-content: space-around;
-    font-weight: 300;
-}
-
-hr:not([size]) {
-    height: 5px;
-}
-.footer hr{
-    width: 60%;
-    background-color: #000717;
-    border-radius: 5px;
-    height: 5px;
-    border: none;
-    margin: auto;
-}
-
-.foot-list a:hover{
-    color: #efefef;
-    font-weight: 600;
-    transform: translateY(-20%);
-}
-
 .foot{
     display: flex;
     padding: 5% 5% 3% 5%;
@@ -260,24 +247,15 @@ iframe{
     border-radius: 10px;
     filter: drop-shadow(5px 5px 7px #000);
 }
-.image img{
-    border-radius:500px;
-    width:100%;
-    
-}
-.image{
-    width:10%;
 
-}
-a{
-    text-decoration: none;
-    color:#efefef;
-}
 
-.name1{
-    margin-bottom: 1%;
+h1{
+    font-size: 2rem;
+    color: #da2c38;
+    padding-left: 1%;
+    font-weight: 600;
+    margin:  2% auto;
 }
-
 </style>
 <link rel="shortcut icon" href="../skilly-logo.png" type="image/x-icon">
 <link rel="stylesheet" href="media.css">
@@ -288,7 +266,7 @@ a{
 </head>
 <body>
         <div class="navbar navbar-expand-md header">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="fas fa-bars" style="color: #efefef;"></span>
                   </button>
                   <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">              
@@ -313,115 +291,116 @@ a{
         </div>
 
     <div class="player" data-aos="zoom-out-up">
-        <iframe width="90%" height="550px" src="https://www.youtube.com/embed/lreNAOcjtCE" title="YouTube video player" frameborder="0" 
+        <iframe width="90%" height="400px" src="https://www.youtube.com/embed/lreNAOcjtCE" title="YouTube video player" frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <p class="video"data-aos="zoom-out-right">Toyota Mark X 300G Premium | Owner Review | PakWheels</p>
-    <br><br>
-    <p class="pak" data-aos="fade-up">PakWheels</p>
-    <hr class="line" data-aos="fade-up">
-    <div>
-        <h1  data-aos="fade-up">About Teacher</h1>
-        <div class="tinfo">
-            <div class="timg m-4 shadow"data-aos="fade-down">
-                <img src="profile.jpg"  class="w-100 rounded-circle" >
-            </div>
-            <div class="tdesc"data-aos="fade-down">
-                <h2>Ahmed Sohail</h2>
-                <p>Tech-IQ</p>
-            </div>
+    <p class="video my-3"data-aos="zoom-out-right">Toyota Mark X 300G Premium | Owner Review | PakWheels</p>
+    <p class="pak mb-5 mt-2" data-aos="fade-up">PakWheels</p>
+    
+    
+<hr>
+
+<h1 data-aos="zoom-out-up">About Teacher</h1>
+<div class="tinfo">
+    <div class="timg m-4 shadow" data-aos="zoom-in-right">
+        <img src="../course description page/profile.jpg" alt="" class="w-100 rounded-circle">
+    </div>
+    <div class="tdesc" data-aos="zoom-in-left">
+        <h2>Mubashir Ahmed</h2>
+        <p>Tech-IQ</p>
+    </div>
+</div>
+
+<div class="info w-75 p-2 m-auto text-center" data-aos="fade-up">
+I'm a Student and also a Youtuber. I'm trying to give the new Students in Pakistan a skill to live and trying to 
+give the youth, a exposure about Technology from the very Basic.
+</div>
+
+<hr>
+
+<h1 data-aos="zoom-out-up">Course Rating</h1>
+
+<div class="mliked px-3 py-4 mx-5 my-4 w-50 shadow float-end" data-aos="fade-left">
+    <h3 class="text-center">Most Liked</h3>
+    <div class="et my-2 rounded">
+        <i class="fas fa-heart m-3"></i>
+        <p class="mb-0">Engaging Teacher</p>
+    </div>
+    <div class="et my-2 rounded">
+        <i class="fas fa-heart m-3"></i>
+        <p class="mb-0">Organizations of Lessons</p>
+    </div>
+    <div class="et my-2 rounded">
+        <i class="fas fa-heart m-3"></i>
+        <p class="mb-0">Helpful Examples</p>
+    </div>
+</div>
+
+<div class="mliked w-50 px-3 py-5 mx-5 my-5 shadow " style="clear: both;">
+    <h3 class="text-center">Expectations Met?</h3>
+    <div class="op">
+        <p>Exceeded!</p>
+        <div class="progress mx-3">
+            <div class="progress-bar progress-bar-striped bg-warning" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1500" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        <p class="text-end">60%</p>
+    </div>
+    <div class="op">
+        <p>Yes</p>
+        <div class="progress mx-3">
+            <div class="progress-bar progress-bar-striped bg-warning" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1500" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        <p class="text-end">20%</p>
+    </div>
+    <div class="op">
+        <p class="w-25">Somewhat</p>
+        <div class="progress mx-3">
+            <div class="progress-bar progress-bar-striped bg-warning" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1500" role="progressbar" style="width: 13%" aria-valuenow="13" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-        
-        <div class="info w-75 p-2 m-auto text-center"data-aos="fade-down-right">
-        I'm a Student and also a Youtuber. I'm trying to give the new Students in Pakistan a skill to live and trying to 
-        give the youth, a exposure about Technology from the very Basic.
+        <p class="text-end">13%</p>
+    </div>
+    <div class="op">
+        <p class="w-25">Not Really</p>
+        <div class="progress mx-3">
+            <div class="progress-bar progress-bar-striped bg-warning" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1500" role="progressbar" style="width: 7%" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-        
-        <hr>
-        
-        <h1  data-aos="fade-up">Course Rating</h1>
-        
-        <div class="mliked px-3 py-4 mx-5 my-4 w-50 shadow float-end"data-aos="fade-up-right">
-            <h3 class="text-center">Most Liked</h3>
-            <div class="et my-2 rounded">
-                <i class="fas fa-heart m-3"></i>
-                <p class="mb-0">Engaging Teacher</p>
-            </div>
-            <div class="et my-2 rounded"data-aos="fade-up-right">
-                <i class="fas fa-heart m-3"></i>
-                <p class="mb-0">Organizations of Lessons</p>
-            </div>
-            <div class="et my-2 rounded"data-aos="fade-up-right">
-                <i class="fas fa-heart m-3"></i>
-                <p class="mb-0">Helpful Examples</p>
-            </div>
+        <p class="text-end">7%</p>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="foot-list">
+        <a href="../About us/aboutus.html">About</a>
+        <a href="../Instructor page/instructor.html">Instructors</a>
+        <a href="../Privacy policy page/index.html">Privacy Policy</a>
+        <a href="../Instructor page/instructor.html">Channel Links</a>
+    </div>
+    <hr data-aos="fade-right">
+    <div class="foot">
+        <div class="foot-left">
+            <img src="../copyright.png" alt="" width="10%">
+            <p style="display: inline-block; padding-left: 4%;">2022. All Rights Reserved</p>
         </div>
-        
-        <div class="mliked w-50 px-3 py-5 mx-5 my-5 shadow " style="clear: both;"data-aos="fade-up-left">
-            <h3 class="text-center">Expectations Met?</h3>
-            <div class="op">
-                <p>Exceeded!</p>
-                <div class="progress mx-3" data-aos="fade-up-left">
-                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" data-aos="fade-up-left"></div>
-                  </div>
-                <p class="text-end">60%</p>
-            </div>
-            <div class="op">
-                <p>Yes</p>
-                <div class="progress mx-3"data-aos="fade-up-left">
-                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"data-aos="fade-up-left"></div>
-                  </div>
-                <p class="text-end">20%</p>
-            </div>
-            <div class="op"data-aos="fade-up-left">
-                <p class="w-25">Somewhat</p>
-                <div class="progress mx-3">
-                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 13%" aria-valuenow="13" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <p class="text-end">13%</p>
-            </div>
-            <div class="op"data-aos="fade-up-left">
-                <p class="w-25">Not Really</p>
-                <div class="progress mx-3">
-                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 7%" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <p class="text-end">7%</p>
-            </div>
+        <div class="foot-right">
+            <img src="../facebook.png" alt="" width="15%" class="px-2">
+            <img src="../g5.png" alt="" width="15%" class="px-2">
+            <img src="../google.png" alt="" width="30%" class="px-2">
         </div>
-    <div class="footer" data-aos="zoom-out-up">
-            <div class="foot-list">
-                <a href="../About us/aboutus.html">About</a>
-                <a href="../Instructor page/instructor.html">Instructors</a>
-                <a href="../Privacy policy page/index.html">Privacy Policy</a>
-                <a href="../Instructor page/instructor.html">Channel Links</a>
-            </div>
-            <hr data-aos="fade-right">
-            <div class="foot">
-                <div class="foot-left">
-                    <img src="../copyright.png" alt="" width="10%">
-                    <p style="display: inline-block; padding-left: 4%;">2022. All Rights Reserved</p>
-                </div>
-                <div class="foot-right">
-                    <img src="../facebook.png" alt="" width="15%" class="px-2">
-                    <img src="../g5.png" alt="" width="15%" class="px-2">
-                    <img src="../google.png" alt="" width="30%" class="px-2">
-                </div>
-            </div>
-        </div>
-        <script>
-            $('.navbar-toggler').click(function(){
-                console.log("waf");
-                if($('.navbar-toggler').hasClass("collapsed")){
-                    $('.nav-item').removeClass("py-2");
-                    $(".nav-item").removeClass('new');
-                }
-                else{
-                    $('.nav-item').addClass("py-2");
-                    $(".nav-item").addClass('new');
-                    
-                }
-            });
-        </script> 
+    </div>
+</div>
+
+<script>
+    $('.navbar-toggler').click(function(){
+        if($('.navbar-toggler').hasClass("collapsed")){
+            $('.nav-item').removeClass("py-2");
+        }
+        else{
+            $(".navbar").css("background-color","#da2c38");
+            $('.nav-item').addClass("py-2");
+            
+        }
+    });
+</script>
           <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
           <script>
             AOS.init();

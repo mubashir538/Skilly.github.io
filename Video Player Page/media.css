@@ -2,42 +2,50 @@
 
 }
 @media(max-width:900px){
-    .lists{
+    .video{
         font-size: 0.9rem;
     }
-    .video{
-        font-size: 2rem;
-    }
     .pak{
-        font-size: 2rem;
+        font-size: 0.65rem;
     }
     
     .tdesc{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
     .tdesc h2{
-        font-size: 0.9rem;}
+        font-size: 0.8rem;}
     
     .info{
-        font-size: 0.85rem}
+        font-size: 0.8rem}
     .mliked{
-        font-size:0.9rem;
+        font-size:0.8rem;
         }
         .et{
-            font-size: 0.8rem;}
+            font-size: 0.7rem;}
             .foot-list{
-                font-size: 0.8rem;}
-    
+                font-size: 0.7rem;}
+                .timg{
+                    width: 80px;
+                    height: 80px; 
+                 }
+                 .progress{
+                     height: 1.2rem;
+                     width: 70%;
+                 }
+                 .mliked h3{
+                     font-size: calc(0.8rem + .6vw);
+                 }
+                 h1{
+                     font-size: 1.2rem;
+                 }
+                 
 }
 @media(max-width:600px){
-.lists{
+.video{
     font-size: 0.7rem;
 }
-.video{
-    font-size: 1rem;
-}
 .pak{
-    font-size: 1rem;
+    font-size: 0.5rem;
 }
 
 .tdesc{
@@ -55,6 +63,21 @@
         font-size: 0.6rem;}
         .foot-list{
             font-size: 0.6rem;}
+            .timg{
+                width: 50px;
+                height: 50px; 
+             }
+             .progress{
+                 height: 1rem;
+                 width: 50%;
+             }
+             .mliked h3{
+                 font-size: calc(0.7rem + .6vw);
+             }
+             h1{
+                 font-size: 1rem;
+             }
+             
 }
 @media(max-width:400px){
 

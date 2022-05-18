@@ -117,7 +117,12 @@ hr{
     border-radius: 5px;
     height: 5px;
     border: none;
+    opacity: 1;
     margin: 10% auto 10% auto ;
+}
+
+hr:not([size]){
+    height: 5px;
 }
 
 

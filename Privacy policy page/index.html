@@ -15,8 +15,6 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <style>
-     
-
     body{
         background-color:#000717;
         font-family: 'Montserrat';
@@ -31,7 +29,7 @@
         float:left;
         padding: 2%;
         font-size: 3rem;
-        line-height: 50px;
+        /* line-height: 50px; */
         color: #efefef;
         width:inherit;
         float: center;
@@ -46,7 +44,7 @@
     }
     p{
         font-size: 1.5rem;
-        line-height: 39px;
+        /* line-height: 39px; */
     }
 .green{
     color: rgb(32, 226, 32);
@@ -70,6 +68,7 @@
 .heading h1, .headings h1{
     color:#da2c38;
     font-weight: 600;
+    font-size: 2rem;
 
 }
 .headings{
@@ -209,7 +208,7 @@ a{
 <body>
         
         <div class="navbar navbar-expand-md header">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="fas fa-bars" style="color: #efefef;"></span>
                   </button>
                   <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">              
@@ -247,8 +246,8 @@ a{
             Privacy Policy have the same meanings as in our Terms and Conditions. 
         </p>
     </div>
-        <div class="heading"data-aos="zoom-out-up">
-            <h1 data-aos="fade-right">Tracking Cookies Data </h1>
+        <div class="heading mt-4 mb-3"data-aos="zoom-out-up">
+            <h1 data-aos="fade-right" class="my-3">Tracking Cookies Data </h1>
             <p data-aos="fade-right">We use cookies and similar tracking technologies to track the activity on our Service and we hold certain information.
              Cookies are files with a small amount of data which may include an anonymous unique identifier.Cookies are sent to your browser from a website and stored on your device.
              Other tracking technologies are also used such as beacons, tags and scripts to collect and track information and to improve and analyze our Service.
@@ -263,7 +262,7 @@ a{
             </div>
             <br> <br>
             <div class="headings"data-aos="zoom-out-up">
-                <h1 data-aos="fade-right">Retention of Data</h1>
+                <h1 data-aos="fade-right" class="my-3">Retention of Data</h1>
                 <p>We will retain your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your Personal Data to the extent necessary to comply with our legal obligations 
                     (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.
                     <br><br>
@@ -292,20 +291,17 @@ a{
                         </div>
                     </div>
                 </div>
-                <script>
-                    $('.navbar-toggler').click(function(){
-                        console.log("waf");
-                        if($('.navbar-toggler').hasClass("collapsed")){
-                            $('.nav-item').removeClass("py-2");
-                            $(".nav-item").removeClass('new');
-                        }
-                        else{
-                            $('.nav-item').addClass("py-2");
-                            $(".nav-item").addClass('new');
-                            
-                        }
-                    });
-                </script> 
+                
+<script>
+    $('.navbar-toggler').click(function(){
+        if($('.navbar-toggler').hasClass("collapsed")){
+            $('.nav-item').removeClass("py-2");
+        }
+        else{
+            $('.nav-item').addClass("py-2"); 
+        }
+    });
+</script>
                 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
                 <script>
                   AOS.init();

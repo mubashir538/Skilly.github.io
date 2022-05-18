@@ -13,12 +13,11 @@
     <script src="../jquery.js"></script>
     <link rel="stylesheet" href="mediascreens.css">
     <title>Assignment Submission Page</title>
+    <link rel="shortcut icon" href="../skilly-logo.png" type="image/x-icon">
     <style>
         body {
             padding: 0%;
             margin: 0%;
-            background: url("assignment.jpg");
-            background-size: cover;
             color: #efefef;
         }
 
@@ -122,28 +121,46 @@ background: -moz-linear-gradient(180deg, hsla(29, 96%, 56%, 1) 0%, hsla(44, 96%,
 background: -webkit-linear-gradient(180deg, hsla(29, 96%, 56%, 1) 0%, hsla(44, 96%, 56%, 1) 100%);
 filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FB8B24", endColorstr="#FBC224", GradientType=1 );
         }
+        .bod{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+        }
+        .bg-img{
+            position: relative;
+            height: 100vh;
+            object-fit: cover;
+            filter: brightness(70%) blur(3px);
+        }
+        h1{
+            width: 30%;
+            font-size: 3rem;
+        }
     </style>
     <link rel="stylesheet" href="Assigment.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
+    <img src="assignment.jpg" alt="" width="100%" class="bg-img">
+    <div class="bod">
     <a href="../course description page/cd.html">
     <div data-aos="fade-right" class="img m-4">
         <img src="jawad.png" alt="" width="100%">
     </div>
 </a>
-    <h1 data-aos="fade-right" class="my-5 ps-5 w-50">Let's Submit Your Assignment</h1>
+    <h1 data-aos="fade-right" class="my-3 ps-5">Let's Submit Your Assignment</h1>
 
-    <div class="form p-5 ">
+    <div class="form p-5 pb-2 ">
         <div data-aos="zoom-in" class="logo float-end">
             <img src="small-logo.png" alt="" width="100%">
         </div class="form-control">
-        <form data-aos="zoom-in " action="../index.html">
+        <form data-aos="zoom-in " action="../course description page/cd.html">
             <input type="text" placeholder="Your Name" class="form-control my-2" aria-describedby="basic-addon1">
             <input type="text" placeholder="Your Student ID" class="form-control my-2" aria-describedby="basic-addon1">
             <input class="py-4 button" type="file" id="myfile" name="myfile"> <br>
-            <div data-aos="zoom-in" class="btun">
+            <div data-aos="zoom-in" class="btun my-2">
                 <input type="submit" class="Submit" value="Submit">
             </div>
         </form>
@@ -151,6 +168,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FB8B24", en
 
     </form>
     </div>
+</div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();

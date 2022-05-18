@@ -10,10 +10,9 @@
     .foot-list{
         font-size: 0.9rem;
     }
-    .lists{
-        font-size: 0.9rem;
+    .heading h1, .headings h1{
+        font-size: 1.2rem;
     }
-    
 }
 @media(max-width:600px){
     .para{
@@ -25,10 +24,9 @@
     .foot-list{
         font-size: 0.6rem;
     }
-    .lists{
-        font-size: 0.7rem;
+    .heading h1, .headings h1{
+        font-size: 1rem;
     }
-
 }
 @media(max-width:400px){
 }

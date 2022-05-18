@@ -24,7 +24,7 @@
         <a data-aos='fade-right' class="navbar-brand image">
             <img src="../small-logo.png" width= 100%>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="fas fa-bars" style="color: #efefef;"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">              
@@ -51,7 +51,7 @@
     <p class="page-title">Instructors</p>
 </div>
 
-<div id="programming">
+<div id="programming" class="px-4">
  <h1>Programming</h1>
     <div data-aos="fade-left" class=" swiper mySwiper container2">
         <div class="swiper-wrapper content">
@@ -167,7 +167,7 @@
 
 <hr>
 
-<div id="designing">
+<div id="designing" class="px-4">
 <h1>Designing</h1>
 <div data-aos="fade-left" class=" swiper mySwiper container2">
     <div class="swiper-wrapper content">
@@ -238,7 +238,7 @@
 
 <hr>
 
-<div id="web">
+<div id="web" class="px-4">
 <h1>Web Development</h1>
 <div data-aos="fade-left" class=" swiper mySwiper container2">
     <div class="swiper-wrapper content">
@@ -331,7 +331,7 @@
 
 <hr>
 
-<div id="iot">
+<div id="iot" class="px-4">
 <h1>IOT and Technology</h1>
 <div data-aos="fade-left" class=" swiper mySwiper container2">
     <div class="swiper-wrapper content">
@@ -424,7 +424,7 @@
 
 <hr>
 
-<div id="business">
+<div id="business" class="px-4">
 <h1>Business Managment</h1>
 <div data-aos="fade-left" class=" swiper mySwiper container2">
     <div class="swiper-wrapper content">
@@ -498,7 +498,7 @@
 
 <hr>
 
-<div id="lifestyle">
+<div id="lifestyle" class="px-4">
 <h1>LifeStyle</h1>
 <div data-aos="fade-left" class=" swiper mySwiper container2">
     <div class="swiper-wrapper content">
@@ -591,7 +591,7 @@
 
 <hr>
 
-<div id="video-edit">
+<div id="video-edit" class="px-4">
 <h1>Video Editing and Animation</h1>
 <div data-aos="fade-left" class=" swiper mySwiper container2">
     <div class="swiper-wrapper content">
@@ -661,60 +661,7 @@
 
 <hr>
 
-<div id="cooking">
-<h1>Cooking</h1>
-<div data-aos="fade-left" class=" swiper mySwiper container2">
-    <div class="swiper-wrapper content">
-        <div class="swiper-slide card">
-            <div class="card-content">
-                <div class="imge">
-                    <img src="instructors/mubashir siddiqui.png" alt="" width="100%">
-                </div>
-                <div class="name-profession">
-                    <span class="name">Mubashir Siddiqui</span>
-                    <span class="profession">Village food Secrets</span>
-                </div>
-                <a class="btnpic"href="https://www.youtube.com/c/VillageFoodSecrets">
-                        Check Out
-                  </a>
-                  <div class="icons">
-                      <img src="insta.png" alt="" width="100%">
-                      <img src="facebook.png" alt="" width="100%">
-                      <img src="g5.png" alt="" width="100%">
-                  </div>
-            </div>
-
-        </div>
-        <div class="swiper-slide card">
-            <div class="card-content">
-                <div class="imge">
-                    <img src="instructors/cake.jpg" alt="" width="100%">
-                </div>
-                <div class="name-profession">
-                    <span class="name">Mr. Cakes</span>
-                    <span class="profession">Mr. Cakes</span>
-                </div>
-                <a class="btnpic"href="https://www.youtube.com/c/MrCakesOfficial">
-                        Check Out
-                  </a>
-                  <div class="icons">
-                      <img src="insta.png" alt="" width="100%">
-                      <img src="facebook.png" alt="" width="100%">
-                      <img src="g5.png" alt="" width="100%">
-                  </div>
-            </div>
-
-        </div>
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
-  </div>
-</div>  
-
-<hr>
-
-<div id="marketing">
+<div id="marketing" class="px-4">
 <h1>Digital Marketing</h1>
 <div data-aos="fade-left" class=" swiper mySwiper container2">
     <div class="swiper-wrapper content">
@@ -788,7 +735,7 @@
 
 <hr>
 
-<div id="seo">
+<div id="seo" class="px-4">
 <h1>Search Engine Optimization</h1>
  <div data-aos="fade-left" class=" swiper mySwiper container2">
         <div class="swiper-wrapper content">
@@ -863,7 +810,7 @@
     <div class="foot-list">
         <a href="../About us/aboutus.html">About</a>
         <a href="../Instructor page/instructor.html">Instructors</a>
-        <a href="../Privacy policy page/privacypolicy.html">Privacy Policy</a>
+        <a href="../Privacy policy page/index.html">Privacy Policy</a>
         <a href="../Instructor page/instructor.html">Channel Links</a>
     </div>
     <hr data-aos="fade-right">
@@ -879,19 +826,14 @@
         </div>
     </div>
 </div>
-
 <script>
     $('.navbar-toggler').click(function(){
-        console.log("waf");
         if($('.navbar-toggler').hasClass("collapsed")){
             $('.nav-item').removeClass("py-2");
-            $(".navbar").css("background-color","transparent");
-            $(".nav-item").removeClass('new');
         }
         else{
             $(".navbar").css("background-color","#da2c38");
             $('.nav-item').addClass("py-2");
-            $(".nav-item").addClass('new');
             
         }
     });

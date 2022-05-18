@@ -33,6 +33,10 @@
     }    
 }
 @media (max-width: 600px) {
+    input[type=file]::file-selector-button 
+    {
+        font-size: 0.7rem;
+    }
     .form-control{
         font-size: 0.6rem;
     }

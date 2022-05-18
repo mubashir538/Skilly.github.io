@@ -32,9 +32,6 @@
     hr:not([size]){
         height: 2.5px;
     }
-    .lists{
-        font-size: 0.6rem;
-    }
     .page-title{
         border-radius: 10px;
         font-size: 1rem;

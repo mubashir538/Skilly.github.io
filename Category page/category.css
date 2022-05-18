@@ -124,7 +124,7 @@ body{
 }
 
 .cat-items{
-    margin: 13% auto 13% auto;  
+    /* padding: 13% auto;   */
     display: flex;
     justify-content: space-around;
     align-content: center;
@@ -132,14 +132,10 @@ body{
     cursor: pointer;
     transition: all 500ms ease;
 }
-.cat-items:hover .para{
-    transform: scale(1.1) translateY(1.3%);
-}
 
-.cat-items:hover .images{
-    transform: scale(1.1) translateY(10%);
+.cat-items:hover{
+    background-color: #26465344;
 }
-
 .categories a:hover{
     color: #efefef;
 }

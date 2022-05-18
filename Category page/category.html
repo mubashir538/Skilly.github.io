@@ -22,7 +22,7 @@
         <a data-aos='fade-right' class="navbar-brand image">
             <img src="../small-logo.png" width= 100%>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="fas fa-bars" style="color: #efefef;"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">              
@@ -50,7 +50,7 @@
 </div>
 
 <div class="categories">
-    <a href="../Courses page/Courses.html#Designing" data-aos="zoom-in" class="cat-items">
+    <a href="../Courses page/Courses.html#Designing" data-aos="zoom-in" class="cat-items py-5">
         <div class="images">
             <img src="1x/designing.png" alt="">
         </div>
@@ -61,7 +61,7 @@
                 the user experience.</p>
         </div>
     </a>
-    <a href="../Courses page/Courses.html#Web-dev" data-aos="zoom-in" class="cat-items">
+    <a href="../Courses page/Courses.html#Web-dev" data-aos="zoom-in" class="cat-items py-5">
         <div class="para">
             <h1>Web Development</h1>
             <p>Web development refers to the building, 
@@ -76,7 +76,7 @@
             <img src="1x/website.png" alt="">
         </div>
     </a>
-    <a href="../Courses page/Courses.html#prog-dev" data-aos="zoom-in" class="cat-items">
+    <a href="../Courses page/Courses.html#prog-dev" data-aos="zoom-in" class="cat-items py-5">
         <div class="images">
             <img src="1x/programming.png" alt="">
         </div>
@@ -89,7 +89,7 @@
                 languages, such as JavaScript, Python, and C++.</p>
         </div>
     </a>
-    <a href="../Courses page/Courses.html#business" data-aos="zoom-in" class="cat-items">
+    <a href="../Courses page/Courses.html#business" data-aos="zoom-in" class="cat-items py-5">
         <div class="para">
             <h1>Bussiness Planning</h1>
             <p>A business is defined as an organization or 
@@ -105,7 +105,7 @@
             <img src="1x/business.png" alt="">
         </div>
     </a>
-    <a href="../Courses page/Courses.html#Digital-Marketing" data-aos="zoom-in" class="cat-items">
+    <a href="../Courses page/Courses.html#Digital-Marketing" data-aos="zoom-in" class="cat-items py-5">
         <div class="images">
             <img src="1x/digital marketing.png" alt="">
         </div>
@@ -121,7 +121,7 @@
                 channel.</p>
         </div>
     </a>
-    <a href="../Courses page/Courses.html#Video-edit" data-aos="zoom-in" class="cat-items">
+    <a href="../Courses page/Courses.html#Video-edit" data-aos="zoom-in" class="cat-items py-5">
         <div class="para">
             <h1>Video Editing and Animation</h1>
             <p>Video editing is the process of editing 
@@ -135,36 +135,20 @@
             <img src="1x/animation.png" alt="">
         </div>
     </a>
-    <a href="../Courses page/Courses.html#Cooking" data-aos="zoom-in" class="cat-items">
-        <div class="images">
-            <img src="1x/coooking.png" alt="">
-        </div>
+    <a href="../Courses page/Courses.html#Sports-games" data-aos="zoom-in" class="cat-items py-5">
         <div class="para">
-            <h1>Cooking</h1>
-            <p>Cooking, cookery, or culinary arts is the art, 
-                science and craft of using heat to prepare food 
-                for consumption. Cooking techniques and 
-                ingredients vary widely, from grilling food 
-                over an open fire to using electric stoves, to 
-                baking in various types of ovens, reflecting 
-                local conditions.</p>
-        </div>
-    </a>
-    <a href="../Courses page/Courses.html#Sports-games" data-aos="zoom-in" class="cat-items">
-        <div class="para">
-            <h1>Sprots and Games</h1>
-            <p>A person who regularly plays sports develops 
-                a healthy body, develops better body strength 
-                and better coordination. The physical benefits 
-                also include maintaining a healthy weight, 
-                preventing chronic diseases and learning the 
-                skills necessary to maintain a healthy lifestyle.</p>
+            <h1>SEO</h1>
+            <p>Search engine optimization (SEO) is the practice of orienting your website to rank 
+                higher on a search engine results page (SERP) so that you receive more traffic. 
+                The aim is typically to rank on the first page of Google results for search terms 
+                that mean the most to your target audience.
+            </p>
         </div>
         <div class="images">
             <img src="1x/sports.png" alt="">
         </div>
     </a>
-    <a href="../Courses page/Courses.html#Lifestyle" data-aos="zoom-in" class="cat-items">
+    <a href="../Courses page/Courses.html#Lifestyle" data-aos="zoom-in" class="cat-items py-5">
         <div class="images">
             <img src="1x/lifestyle.png" alt="">
         </div>
@@ -178,7 +162,7 @@
                 common elements of lifestyle.</p>
         </div>
     </a>
-    <a href="../Courses page/Courses.html#IOT" data-aos="zoom-in" class="cat-items">
+    <a href="../Courses page/Courses.html#IOT" data-aos="zoom-in" class="cat-items py-5">
         <div class="para">
             <h1>IOT and Technology</h1>
             <p>The Internet of Things (IoT) describes the 
@@ -197,7 +181,7 @@
     <div class="foot-list">
         <a href="../About us/aboutus.html">About</a>
         <a href="../Instructor page/instructor.html">Instructors</a>
-        <a href="../Privacy policy page/privacypolicy.html">Privacy Policy</a>
+        <a href="../Privacy policy page/index.html">Privacy Policy</a>
         <a href="../Instructor page/instructor.html">Channel Links</a>
     </div>
     <hr data-aos="fade-right">
@@ -216,16 +200,12 @@
 
 <script>
     $('.navbar-toggler').click(function(){
-        console.log("waf");
         if($('.navbar-toggler').hasClass("collapsed")){
             $('.nav-item').removeClass("py-2");
-            $(".navbar").css("background-color","transparent");
-            $(".nav-item").removeClass('new');
         }
         else{
             $(".navbar").css("background-color","#da2c38");
             $('.nav-item').addClass("py-2");
-            $(".nav-item").addClass('new');
             
         }
     });

@@ -170,9 +170,6 @@ background: -webkit-linear-gradient(180deg, hsla(29, 96%, 56%, 1) 0%, hsla(44, 9
 filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FB8B24", endColorstr="#FBC224", GradientType=1 );
 color: #000717;
 }
-.categories img{
-    width: 100%;
-}
 
 .foot-list{
     margin: auto;
